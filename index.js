@@ -32,7 +32,7 @@ app.use("/api/transferencia", trasnferenciasRoutes)
 app.use("/api/mantenimiento", mantenimientoRoutes)
 app.use("/api/desincorporacion", desincorporacionoRoutes)
 app.use("/api/tecnico", tecnicoRoutes)
-app.listen(8800,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("Api marchando");
     
 })
